@@ -1,0 +1,49 @@
+:root {
+    --body-color: #ecf9f3;
+    --div-color: white;
+    --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --text-color: rgb(26, 26, 26);
+    --button-color: #5176c6;
+    --hover-color: #F082AC;
+}
+
+body {
+    margin: 0;
+    background-color: var(--body-color);
+    overflow-x:hidden ;
+}
+
+nav {
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    background-color: var(--body-color);
+    /* box-shadow: rgba(95, 95, 95, 0.51) 0px 4px 8px -2px, rgba(255, 255, 255, 0.612) 0px 0px 0px 1px; */
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.game {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    background-color: var(--div-color);
+    box-shadow: rgba(95, 95, 95, 0.51) 0px 4px 8px -2px, rgba(255, 255, 255, 0.612) 0px 0px 0px 1px;
+}
+
+.game img:hover {
+    width: 210px;
+}
+
+.games {
+    display: flex;
+    height: 85vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
