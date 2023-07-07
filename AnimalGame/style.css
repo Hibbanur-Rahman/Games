@@ -1,0 +1,59 @@
+:root {
+    --body-color: #ecf9f3;
+    --div-color: white;
+    --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --text-color: rgb(26, 26, 26);
+    --button-color: #5176c6;
+    --hover-color: #F082AC;
+}
+
+body {
+    background-color: var(--body-color);
+    text-align: center;
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.heading img {
+    height: 100px;
+}
+
+.start {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--body-color);
+}
+
+.startDiv {
+    display: block;
+    margin: auto;
+    background-color: var(--div-color);
+    box-shadow: var(--shadow);
+    padding: 50px;
+}
+
+.button {
+    display: flex;
+    text-decoration: none;
+    background-color: #5176c6;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    height: 40px;
+    width: 200px;
+    padding: 10px 16px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: var(--hover-color);
+}
