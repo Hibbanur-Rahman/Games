@@ -1,0 +1,353 @@
+:root {
+    --body-color: #ecf9f3;
+    --div-color: white;
+    --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --text-color: rgb(26, 26, 26);
+    --button-color: #5176c6;
+    --hover-color: #F082AC;
+}
+
+body {
+    background-color: var(--body-color);
+    text-align: center;
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.start {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.startDiv {
+    display: block;
+    margin: auto;
+    background-color: var(--div-color);
+    box-shadow: var(--shadow);
+    padding: 50px;
+}
+
+.fruit {
+    color: #00063b;
+}
+
+.button {
+    display: flex;
+    text-decoration: none;
+    background-color: #5176c6;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    height: 30px;
+    width: 170px;
+    padding: 10px 16px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: var(--hover-color);
+}
+
+.main {
+    display: none;
+}
+
+.head {
+    display: none;
+    padding-top: 5px;
+}
+
+.dropDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.startBtn {
+    display: flex;
+    text-decoration: none;
+    background-color: #5176c6;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    width: 200px;
+    padding: 10px 16px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.startBtn:hover {
+    background-color: var(--hover-color);
+}
+
+h1 {
+    color: var(--text-color);
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#score {
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+#items {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.items div {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: var(--div-color);
+    box-shadow: var(--shadow);
+}
+
+.item {
+    display: flex;
+    width: 150px;
+    margin: 10px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.item img {
+    width: 150px;
+}
+
+.drop {
+    display: flex;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: var(--div-color);
+    box-shadow: var(--shadow);
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.drop img {
+    width: 150px;
+}
+
+.imoji {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    justify-content: right;
+    width: 200px;
+    height: 200px;
+}
+
+#mark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+}
+
+
+/* CSS */
+
+.button-1 {
+    margin-top: 20px;
+    background-color: #5176c6;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    width: 200px;
+    list-style: none;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    z-index: 3;
+}
+
+.button-1:hover {
+    background-color: var(--hover-color);
+}
+
+.dark-theme {
+    --body-color: #00063b;
+    --div-color: #ecf9f3;
+    --shadow: rgba(53, 53, 53, 0.63) 0px 7px 29px 0px;
+    --text-color: white;
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: right;
+}
+
+.theme {
+    margin-right: 30px;
+    border: none;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgb(255, 255, 255) 0px -36px 30px 0px inset, rgb(255, 255, 255) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.navButton {
+    margin-right: 30px;
+    margin-top: 10px;
+    background-color: #5176c6;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: none;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    width: 200px;
+    padding: 10px 16px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgb(255, 255, 255) 0px -36px 30px 0px inset, rgb(255, 255, 255) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+}
+
+.gif {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+
+.win {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    margin: 0;
+    z-index: 1;
+}
+
+.navDiv {
+    position: absolute;
+    /* height: 100%; */
+    text-align: center;
+    margin: 0;
+}
+
+.openDiv {
+    width: 100%;
+    cursor: pointer;
+    display: none;
+    text-align: left;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 30px;
+}
+
+.nav {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: var(--button-color);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: absolute;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    z-index: 2;
+}
+
+.nav:hover {
+    background-color: var(--hover-color);
+}
+
+.sidebar {
+    height: 305px;
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--body-color);
+}
+
+.sideBarBtn {
+    display: block;
+    margin: auto;
+    background-color: var(--div-color);
+    box-shadow: var(--shadow);
+    padding: 50px;
+}
+
+.close {
+    position: absolute;
+    cursor: pointer;
+    display: none;
+    text-align: left;
+}
+
+.navButton {
+    display: flex;
+    margin: 0;
+    margin-top: 10px;
+    background-color: #5176c6;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    width: 200px;
+    padding: 10px 16px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navButton:hover {
+    background-color: var(--hover-color);
+}

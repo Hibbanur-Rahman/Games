@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Identify Fruit</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+
+</head>
+
+<body class="bodyDiv">
+    <div class="navDiv">
+        <div class="openDiv">
+            <button id="openBtn" class="open nav" role="button">
+            ☰
+        </button>
+
+            <button id="close" class="close nav" role="button">
+            X
+        </button>
+        </div>
+
+        <div class="sidebar">
+            <div class="sideBarBtn">
+                <span class="heading"><img src="../images/logo.png" alt="logo" height="100px">
+            </span>
+                <button id="theme" class="navButton">
+                DARK MODE
+            </button>
+
+                <button id="submit" class="navButton">
+            SUBMIT
+            </button>
+                <button id="resume" class="navButton resume">
+            RESUME
+            </button>
+                <button id="exit" class="navButton exit" role="button">
+            RESTART
+            </button>
+            </div>
+        </div>
+
+    </div>
+    <img id="gif" src="win.gif " alt="WS2k " class="gif win">
+    <div class="start">
+        <div class="startDiv">
+            <span class="heading"><img src="../images/logo.png" alt="logo" height="100px">
+            </span>
+            <h1 class="fruit">Identify Fruit</h1>
+            <button class="startBtn start" role="button">START</button>
+            <a class="button" role="button" href="../index.html">EXIT</a>
+
+        </div>
+    </div>
+    <div id="head" class="head">
+        <h1>Identify Fruits</h1>
+        <p id="score">Score: 0</p>
+    </div>
+    <div class="main">
+
+
+        <div id="items" class="items">
+
+
+        </div>
+        <div class="dropDiv">
+            <div class="imoji" id="imoji1">
+                <img id="gif" src="WS2k.gif " alt="WS2k " class="gif1 gif">
+            </div>
+            <div id="drop-Target" class="drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <span id="dragText" class="dragText" style="display: auto;">Drop here</span>
+                <span id="mark" class="mark"></span>
+                <audio id="awesomeSound">
+            <source src="awesome.mp3" type="audio/mpeg">
+        </audio>
+                <audio id="yuckySound">
+            <source src="yucky.mp3" type="audio/mpeg">
+        </audio>
+
+            </div>
+            <div class="imoji" id="imoji2">
+                <img id="gif2" src="emoji-yuck.gif " alt="WS2k " class="gif2 gif">
+
+            </div>
+        </div>
+
+        <button class="button-1" role="button ">NEXT</button>
+    </div>
+    <script src="script.js "></script>
+</body>
+
+</html>
